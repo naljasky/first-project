@@ -1,0 +1,85 @@
+/* reset */
+*{margin:0;padding:0;}
+body{color:#333;}
+li{list-style:none;}
+a{text-decoration:none;color:#333;}
+img{border:0;}
+.clearfix:after,.clearfix:before{content:"";display:block;clear:both;}
+
+/* layout */
+#wrap{width:1200px;margin:0 auto;}
+header{width:100%;height:100px;}
+.slide{overflow:hidden;width:100%;height:300px;margin-bottom:20px;}
+.content{width:100%;height:200px;}
+footer{width:100%;height:100px;margin-top:10px;
+background:#eee;}
+
+/* header */
+header h1{float:left;width:200px;padding:30px 10px;}
+header nav{z-index:10;position:relative;float:right;width:700px;height:100px;padding-top:20px;}
+header nav>ul{border:1px solid #ccc;background:#fff;}
+header nav>ul>li{float:left;width:25%;text-align:center;}
+header nav>ul>li>a{display:block;padding:5px 0;line-height:50px;font-size:24px;font-weight:bold;}
+header nav>ul>li:hover>a{background:#cad;}
+header nav>ul>li>ul.sub{display:none;}
+header nav>ul>li>ul.sub>li{}
+header nav>ul>li>ul.sub>li:hover>a{background:#cad;}
+header nav>ul>li>ul.sub>li>a{display:block;padding:10px 0;font-size:20px;}
+
+/* slide */
+.slide .slideList{position:relative;}
+.slide .slideList li{position:relative;}
+.slide .slideList li a{}
+.slide .slideList li a img{display:block;}
+.slide .slideList li a span{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+display:block;padding:10px 20px;
+color:#fff;background:rgba(0,0,0,0.8);border-radius:25px;}
+
+/* content */
+.content section{float:left;width:33.333%;}
+.content h3{font-size:24px;}
+
+/* 공지사항 & 갤러리 */
+.noti{position:relative;width:100%;}
+.noti h3{float:left;margin-right:10px;padding:10px 20px;cursor:pointer;
+background:#eee;}
+.noti h3.active{color:purple;background:#fff;border:1px solid #ccc;border-bottom:0px;
+font-weight:bold;}
+
+.noti .notice{display:block;position:absolute;top:50px;padding:10px;border:1px solid #ccc;}
+.noti .notice li{width:377px;}
+.noti .notice li a{display:block;float:left;padding:4px 0;font-size:18px;}
+.noti .notice li span{float:right;}
+
+.noti .gal{display:none;position:absolute;top:50px;width:376px;padding:10px;border:1px solid #ccc;}
+.noti .gal li{float:left;padding:6px;}
+.noti .gal li img{width:110px;}
+
+/* 배너 */
+.sub_banner{position:relative;}
+.sub_banner h3{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);padding:10px 20px;
+color:#fff;background:rgba(95,0,255,0.6);border-radius: 25px;}
+
+/* 바로가기 */
+.direct{position:relative;}
+.direct h3{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);padding:10px 20px;
+color:#fff;background:rgba(95,0,255,0.6);border-radius: 25px;}
+
+/* layer popup */
+.layer{display:none;position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);width:500px;height:400px;
+background:#fff;border:1px solid #000;border-radius:20px;}
+.layer .title{padding:20px;
+font-size:28px;font-weight:bold;
+text-align:center;}
+.layer .desc{padding:20px;
+font-size:22px;}
+.layer a{position:absolute;right:20px;bottom:20px;}
+
+/* footer */
+footer p{float:left;width:200px;padding:35px 35px;}
+footer p img{width:150px;}
+footer div.copy{float:left;width:700px;text-align:center;padding-top:35px;
+color:#999;}
+footer div.sns{float:right;width:200px;padding-top:20px;}
+footer div.sns li{float:left;}
+footer div.sns li img{display:block;margin-right:10px;border-radius:50%;}

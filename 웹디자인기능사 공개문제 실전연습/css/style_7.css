@@ -1,0 +1,86 @@
+/* reset */
+*{margin:0;padding:0;}
+li{list-style:none;}
+a{text-decoration:none;color:#333;}
+img{border:0;}
+.clearfix:after,.clearfix:before{content:"";display:block;clear:both;}
+body{color:#333;}
+
+/* layout */
+#wrap{width:100%;}
+header{width:100%;
+background:#F2CB61;}
+.header_inner{width:1200px;height:100px;margin:0 auto;}
+.slide{overflow:hidden;width:1200px;height:300px;margin:0 auto;}
+.content{width:1200px;height:200px;margin:10px auto;}
+footer{width:100%;background:#ddd;}
+.footer_inner{width:1200px;height:100px;margin:0 auto;}
+
+/* header */
+header h1{float:left;padding:25px;}
+header nav{z-index:10;position:relative;right:20px;top:33px;float:right;width:800px;}
+header nav>ul>li{float:left;width:25%;text-align:center;}
+header nav>ul>li>a{display:block;padding:20px 30px;
+font-size:20px;font-weight:bold;}
+header nav>ul>li:hover>a{background:#FFE08C;}
+
+header nav>ul>li>ul.sub{display:none;position:absolute;top:65px;width:25%;background:#fff;}
+header nav>ul>li>ul.sub>li{text-align:center;}
+header nav>ul>li>ul.sub>li>a{display:block;padding:15px 30px;font-size:18px;}
+nav>ul>li>ul.sub>li:hover>a{background:#FFE08C;}
+
+/* slide */
+.slide .slideList{position:relative;}
+.slide .slideList .slideImg{position:relative;}
+.slide .slideList .slideImg a{}
+.slide .slideList .slideImg a img{display:block;}
+.slide .slideList .slideImg span{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);padding:10px 20px;
+color:#fff;background:rgba(0,0,0,0.7);border-radius:25px;}
+
+/* content */
+.content section{float:left;width:33.333%;}
+.content section h3{font-size:24px;}
+
+/* notice */
+section.notice{}
+section.notice h3{display:inline-block;padding:5px 30px;margin-left:15px;
+background:#FAECC5;}
+section.notice ul{width:99%;height:160px;padding:10px;box-sizing:border-box;
+background:#FFE08C;}
+section.notice ul li{width:98%;padding:6px;}
+section.notice ul li:after{content:"";display:block;clear:both;}
+section.notice ul li a{float:left;}
+section.notice ul li span{float:right;}
+
+/* gallery */
+section.gallery{}
+section.gallery h3{display:inline-block;padding:5px 30px;margin-left:15px;
+background:#FAECC5;}
+section.gallery div{width:99%;height:160px;padding:20px 10px;background:#FFE08C;box-sizing:border-box;}
+section.gallery div img{opacity:1;width:110px;padding-top:8px;margin:0 5px;}
+section.gallery div img:hover{opacity:0.7}
+
+/* banner */
+section.banner{position:relative;}
+section.banner h3{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);padding:5px 20px;
+color:#fff;background:#F2CB61;border-radius:20px;}
+section.banner img{}
+
+/* layer */
+.layer{z-index:50;display:none;position:fixed;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,0.8)}
+.layer_inner{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);width:500px;height:300px;
+background:#fff;border-radius:25px;}
+.layer_inner .title{padding:20px;
+text-align:center;font-size:24px;font-weight:bold;}
+.layer_inner .desc{padding:20px;
+font-size:20px;}
+.layer_inner a{position:absolute;right:20px;bottom:20px;font-size:18px;}
+
+/* footer */
+footer p{float:left;width:200px;padding:35px 35px;}
+footer p img{width:150px;}
+footer div.copy{float:left;width:700px;text-align:center;padding-top:35px;
+color:#999;}
+footer div.sns{float:right;width:200px;padding-top:20px;}
+footer div.sns li{float:left;}
+footer div.sns li img{display:block;margin-right:10px;border-radius:50%;}

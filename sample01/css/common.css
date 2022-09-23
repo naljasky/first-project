@@ -1,0 +1,12 @@
+/*reset*/
+* {padding: 0; margin: 0;}
+body {color:#222328}
+li {list-style: none;}
+a {text-decoration: none; color:#333;}
+img {border:0;}
+.fix::before, .fix:active {display: block; content: ""; clear: both;}
+
+/*layout*/
+.wrap {width: 1200px; height: 1100px; margin: 0 auto;} 
+header {width: 100%; height: 200px; background: pink;}
+section {}
